@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 import "./NewsCard.css";
 import notFoundIcon from "../../assets/not-found.svg";
@@ -148,5 +148,17 @@ function NewsCard({
     </section>
   );
 }
+
+NewsCard.propTypes = {
+  articles: PropTypes.array.isRequired,
+  errorMessage: PropTypes.string,
+  visibleCount: PropTypes.number.isRequired,
+  onShowMore: PropTypes.func.isRequired,
+  isSavedPage: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  handleNewsSaved: PropTypes.func.isRequired,
+  handleRemoveArticle: PropTypes.func.isRequired,
+  savedArticles: PropTypes.array.isRequired,
+};
 
 export default NewsCard;

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./Main.css";
 import About from "../About/About";
 import Preloader from "../Preloader/Preloader";
@@ -35,5 +35,18 @@ function Main({
     </main>
   );
 }
+
+Main.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  errorMessage: PropTypes.string,
+  visibleCount: PropTypes.number.isRequired,
+  onShowMore: PropTypes.func.isRequired,
+  hasSearched: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  handleNewsSaved: PropTypes.func.isRequired,
+  handleRemoveArticle: PropTypes.func.isRequired,
+  savedArticles: PropTypes.array.isRequired,
+};
 
 export default Main;

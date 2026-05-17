@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import PropTypes from "prop-types";
 
 import useFormAndValidation from "../../hooks/useFormAndValidation";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
@@ -112,5 +113,12 @@ function RegisterModal({
     </ModalWithForm>
   );
 }
+
+RegisterModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  setActiveModal: PropTypes.func.isRequired,
+  handleRegistration: PropTypes.func.isRequired,
+};
 
 export default RegisterModal;

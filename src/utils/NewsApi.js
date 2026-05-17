@@ -1,10 +1,12 @@
 import { API_KEY } from "./constants";
 
 // Set the base URL depending on the environment
+// Prefer an explicit Vite env var, otherwise use PROD flag to choose URL
 export const newsApiBaseUrl =
-  process.env.NODE_ENV === "production"
+  import.meta.env.VITE_NEWS_API_BASE ||
+  (import.meta.env.PROD
     ? "https://nomoreparties.co/news/v2/everything"
-    : "https://newsapi.org/v2/everything";
+    : "https://newsapi.org/v2/everything");
 
 /**
  * Get the date string in YYYY-MM-DD format.

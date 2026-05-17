@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 import "./RegisterSuccess.css";
 import closeButton from "../../assets/close.svg";
@@ -35,5 +35,11 @@ function RegisterSuccess({ isOpen, onClose, onSignInClick }) {
     </div>
   );
 }
+
+RegisterSuccess.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onSignInClick: PropTypes.func.isRequired,
+};
 
 export default RegisterSuccess;

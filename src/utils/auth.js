@@ -1,16 +1,16 @@
-export const authorize = (email, password) => {
+export const authorize = () => {
   return new Promise((resolve) => {
     resolve({ token: "fake-jwt-token" });
   });
 };
 
-export const register = (name, email, password) => {
+export const register = () => {
   return new Promise((resolve) => {
     resolve({ message: "Registration successful" });
   });
 };
 
-export const checkToken = (token) => {
+export const checkToken = () => {
   return new Promise((resolve) => {
     resolve({
       data: {

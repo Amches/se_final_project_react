@@ -171,6 +171,10 @@ function App() {
     setVisibleCount((prev) => prev + 3);
   };
 
+  if (!isAuthChecked) {
+    return <div className="page">Loading...</div>;
+  }
+
   return (
     <div className="page">
       <div className="page__content">

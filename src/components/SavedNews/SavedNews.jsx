@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./SavedNews.css";
 import NewsCard from "../NewsCard/NewsCard";
 
@@ -51,5 +52,11 @@ function SavedNews({ currentUser, savedArticles, handleRemoveArticle }) {
     </main>
   );
 }
+
+SavedNews.propTypes = {
+  currentUser: PropTypes.object,
+  savedArticles: PropTypes.array,
+  handleRemoveArticle: PropTypes.func.isRequired,
+};
 
 export default SavedNews;

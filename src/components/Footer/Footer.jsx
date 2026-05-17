@@ -6,7 +6,7 @@ import GitHub from "../../assets/github.svg";
 
 function Footer() {
   return (
-    <div className="footer">
+    <nav className="footer">
       <p className="footer__copyright">
         &copy; 2025 Supersite, Powered by News API
       </p>
@@ -45,7 +45,7 @@ function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

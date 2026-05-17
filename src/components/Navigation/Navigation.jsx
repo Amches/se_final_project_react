@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import "./Navigation.css";
 import logoWhite from "../../assets/NewsExplorer.svg";
@@ -142,5 +143,14 @@ function Navigation({ handleSignInClick, isLoggedIn, currentUser, onLogout }) {
     </nav>
   );
 }
+
+Navigation.propTypes = {
+  isHomePage: PropTypes.bool.isRequired,
+  isSavedNewsPage: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  currentUser: PropTypes.object,
+  onLogout: PropTypes.func.isRequired,
+  handleSignInClick: PropTypes.func.isRequired,
+};
 
 export default Navigation;

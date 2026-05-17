@@ -38,7 +38,7 @@
 
 .navigation__home-link {
   position: relative;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -57,7 +57,7 @@
   border: 1px solid #ffffff;
   background: transparent;
   color: #ffffff;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -76,7 +76,7 @@
 }
 
 .navigation__sign-in-btn {
-  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;

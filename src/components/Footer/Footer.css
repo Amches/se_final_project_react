@@ -10,7 +10,7 @@
 }
 
 .footer__copyright {
-  font-family: "roboto_400", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -23,7 +23,7 @@
 }
 
 .footer__links {
-  font-family: "roboto_400", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -31,7 +31,7 @@
   gap: 40px;
 }
 
-.footer__link-home,
+.footer__home,
 .footer__tripleten {
   gap: 40px;
   align-items: center;
